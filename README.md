@@ -122,7 +122,7 @@ Currently, however, our `@@album_count` is stuck at `0`. When and how should we 
 
 ```ruby
 class Album
-  @@album_count 
+  @@album_count  = 0
   
   def initialize
     @@album_count += 1
@@ -148,3 +148,5 @@ Album.new
 Album.count
   # => 3
 ```
+
+<a href='https://learn.co/lessons/ruby-class-variables-and-class-methods-readme' data-visibility='hidden'>View this lesson on Learn.co</a>
